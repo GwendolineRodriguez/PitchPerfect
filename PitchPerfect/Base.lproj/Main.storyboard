@@ -77,7 +77,22 @@
                     <view key="view" contentMode="scaleToFill" id="APj-Qp-g6A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.36808088989999999" blue="0.38151872069999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YgV-ym-8d8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cgc-5p-NeP">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Qod-mo-Tdd" firstAttribute="bottom" secondItem="YgV-ym-8d8" secondAttribute="bottom" id="D65-di-dLJ"/>
+                            <constraint firstItem="Qod-mo-Tdd" firstAttribute="trailing" secondItem="YgV-ym-8d8" secondAttribute="trailing" id="Mrh-Un-7tD"/>
+                            <constraint firstItem="YgV-ym-8d8" firstAttribute="leading" secondItem="Qod-mo-Tdd" secondAttribute="leading" id="bXb-PU-Vzm"/>
+                            <constraint firstItem="YgV-ym-8d8" firstAttribute="top" secondItem="Qod-mo-Tdd" secondAttribute="top" id="l0U-OP-HZ9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Qod-mo-Tdd"/>
                     </view>
                 </viewController>
